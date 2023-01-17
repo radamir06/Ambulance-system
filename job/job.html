@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Работа в "Alpha Hospital"</title>
+</head>
+
+<body>
+    <header id="navbar" class="header">
+        <div class="container">
+            <div class="header_content">
+                <div class="header_logo">
+                    <a href="../Home_rightVersion/index.html"><img src="../img/logo.svg" alt=""></a>
+                </div>
+                <div class="support_call">
+                    <img src="../img/Без названия.svg" alt="">
+                    <div class="call_content">
+                        <p>Круглосуточная запись по телефону:</p>
+                        <a href="tel:+998946106788">+998946106788</a>
+                    </div>
+                </div>
+                <div class="header_toolbar">
+                    <nav class="header_menu">
+                        <ul class="header_list">
+                            <li><a href="../Home_rightVersion/index.html">Главная</a></li>
+                            <li><a href="../About Us/aboutUs.html">О <span>нас</span> </a></li>
+                            <li><a href="../Doctors/index.html">Доктора</a></li>
+                            <li><a href="../Comments/index.html">Отзывы</a></li>
+                            <button class="login_btn2" onclick="document.getElementById('id01').style.display = 'block'">Вход</button>
+                        </ul>
+                    </nav>
+                </div>
+                <button class="login_btn" onclick="document.getElementById('id01').style.display='block'">Вход</button>
+    
+                <div id="header_burger" class="header_burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    
+    </header>
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">×</span>
+
+            </div>
+
+            <div class="login_container">
+                <label for="uname"><b>Логин</b></label>
+                <input type="text" placeholder="Ваш логин" name="uname" id="uname" required>
+
+                <label for="psw"><b>Пароль</b></label>
+                <input type="password" placeholder="Введите пароль" name="psw" id="psw" required>
+
+                <button type="submit" onclick="drLogin()"> Войти </button>
+
+            </div>
+
+
+        </form>
+    </div>
+
+    <div class="main_content">
+        <div class="title">
+            <div class="container">
+                <p> Работа в «Alpha Hospital»
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <p>Корпоративные и партнёрские программы обучения, стажировки за рубежом, активная научная деятельность,
+                    возможности построения горизонтальной и вертикальной карьеры: «СМ-Клиника» предоставляет
+                    профессионалам беспрецедентные возможности для самореализации и роста.</p>
+                <img src="../img/woman purple.png" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="container_text">
+                <p>Карьера в одной из ведущих компаний рынка частной медицины</p>
+                <div class="career_text">
+                    <img src="../img/edu.svg" alt="">
+                    <p>Холдинг «СМ-Клиника» является крупным работодателем медицинской отрасли. На данный момент в 5-и
+                        регионах страны открыты 27 многопрофильных центров. Сейчас в наших клиниках трудится более 3
+                        тысяч работников со средним и высшим медицинским образованием. <br><br>
+
+                        Мы активно масштабируем деятельность, наращиваем количество медицинских центров, выходим в новые
+                        регионы. Для обеспечения растущего бизнеса профессиональными кадрами, мы постоянно проводим найм
+                        специалистов различных медицинских профилей, пополняя нашу команду талантливыми и увлеченными
+                        людьми.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="menu-box">
+                <p>Возможности профессионального и личностного роста</p>
+                <div class="box_title" name="spoiler-button" id="spoiler-button" type="button">
+                    <img src="../img/down-filled-triangular-arrow.png" alt="">
+                    <p>Корпоративные и партнёрские образовательные программы</p>
+                </div>
+                <div class="box">
+                    <div class="hidden" id="spoiler-content">
+                        <p>Корпоративные и партнёрские образовательные программы</p>
+                        <div class="grid">
+                            <div class="box_inner"><img src="../img/b1r6cxnsr4qnw59v102aimk3uhdhmbjg.svg" alt="">
+                                программ дополнительного профессионального образования и > 30 видов тренингов
+                            </div>
+                            <div class="box_inner"><img src="../img/stars.svg" alt=""> Возможности для получения
+                                баллов в системе НМО</div>
+                            <div class="box_inner"><img src="../img/people.svg" alt=""> Развитие коммуникативных и
+                                управленческих компетенций для сотрудников
+                                всех подразделений</div>
+                            <div class="box_inner"><img src="../img/guy.svg" alt=""> Формирование навыков сервисного
+                                поведения и обучение базовым профессиональным компетенциям специалистов холдинга
+                            </div>
+                            <div class="box_inner"><img src="../img/keyboard.svg" alt="">Обучение работе в
+                                программе 1С.МИС</div>
+                            <div class="box_inner"><img src="../img/book.svg" alt=""> Возможности дистанционного
+                                обучения для удобства сотрудников</div>
+                        </div>
+                    </div>
+                </div>
+
+<!--  -->
+
+
+
+                <div class="box_title_usual ">
+                    <p>Программы адаптации и институт наставничества для новых специалистов</p>
+                </div>
+                <div class=" box_title_usual">
+                    <p>Помощь в написании диссертаций и монографий</p>
+                </div>
+                <div class=" box_title_usual">
+                    <p>Cотрудничество с крупнейшими медицинскими вузами страны</p>
+                </div>
+
+                <div class=" box_title_usual">
+                    <p>Обучение и стажировки в России и за рубежом</p>
+                </div>
+                <div class="box_title" name="spoiler-button" id="spoiler-button2" type="button">
+                    <img src="../img/down-filled-triangular-arrow.png" alt="">
+                    <p>Ежегодный конкурс научно-практических работ молодых врачей «Перспектива»</p>
+                </div>
+                <div class="box">
+
+                    <div class="hidden" id="spoiler-content2">
+                        <p>Ежегодный конкурс научно-практических работ молодых врачей «Перспектива»</p>
+                        <div class="box_content_grid">
+                            <div class="box_inner">
+                                <p>7</p><span>ежегодных конкурсов</span>
+                            </div>
+                            <div class="box_inner">
+                                <p>27</p> <span>молодых врачей-победителей</span>
+                            </div>
+                            <div class="box_inner">
+                                <p>82</p> <span>инновационных научных работ</span>
+                            </div>
+                        </div>
+                        <div class="box_inner1">
+                            <img src="../img/vxstfdduar5no8nv5v4bvww2u66dnsav.png" alt="">
+                            <p>С целью поддержки молодых ученых и содействия их профессиональному росту ежегодно
+                                проводится конкурс научных работ «Перспектива». <br><br>
+
+                                Конкурс «Перспектива» — это возможность поддержать врачей, ведущих научную деятельность
+                                на базе клиник холдинга «СМ-Клиника», Лабораторно-диагностического центра «СМ-Клиника» и
+                                сделать их достижения доступными для коллег, внедрить в практику лучшие разработки и
+                                идеи. Каждый раз на конкурс представляются работы, имеющие практическое значение и
+                                научную новизну. Эти критерии являются главными в выборе соискателей на премию.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="box_title" name="spoiler-button" id="spoiler-button3" type="button">
+                    <img src="../img/down-filled-triangular-arrow.png" alt="">
+                    <p>Ежегодный конкурс «Лучший в профессии»</p>
+                </div>
+                <div class="box">
+                    <div class="hidden " id="spoiler-content3">
+                        <p>Ежегодный конкурс «Лучший в профессии»</p>
+                        <div class="grid">
+                            <div class="box_inner">
+                                <p>11</p><span>конкурса профессионального мастерства</span>
+                            </div>
+                            <div class="box_inner">
+                                <p>32</p> <span>конкурсных номинации</span>
+                            </div>
+                            <div class="box_inner">
+                                <p>>500 </p> <span>победителей: врачи, медицинский персонал и сотрудники офиса</span>
+                            </div>
+                            <div class="box_inner">
+                                <p>>7 500 000 р. </p> <span>общая сумма фонда на призовые сертификаты</span>
+                            </div>
+                        </div>
+                        <div class="box_inner1">
+                            <img src="../img/champ.png" alt="">
+                            <p>Статус победителя и приз получают сотрудники холдинга на основании оценки качества и
+                                эффективности работы, осведомлённости в своей области, активной профессиональной
+                                позиции.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_title" name="spoiler-button" id="spoiler-button4" type="button">
+                    <img src="../img/down-filled-triangular-arrow.png" alt="">
+                    <p>Программа развития управленческого и административного персонала «Кадровый резерв»</p>
+                </div>
+                <div class="box">
+                    <div class="hidden" id="spoiler-content4">
+                        <p>Программа развития управленческого и административного персонала «Кадровый резерв»</p>
+                        <div class="grid">
+                            <div class="box_inner">
+                                <p>с 2012 года</p><span>реализуется проект</span>
+                            </div>
+                            <div class="box_inner">
+                                <p>>50</p> <span>выпускников ежегодно занимают управляющие должности</span>
+                            </div>
+
+                        </div>
+                        <div class="box_inner1">
+                            <img src="../img/champ.png" alt="">
+                            <p>Карьерный лифт для вертикального роста. Программа для сотрудников компании, которые
+                                заинтересованы в продвижении по административной линии.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="container_card">
+                <div class="card_grid">
+                    <div class="grid_content">
+                        <img src="../img/percentage.svg" alt="">
+                        <p> Корпоративные льготы</p><span>Льготное медицинское обслуживание, скидки, корпоративные
+                            программы и спецпредложения от партнёров холдинга.</span>
+
+                    </div>
+                    <div class="grid_content">
+                        <img src="../img/champ2.svg" alt="">
+                        <p> Корпоративные льготы</p><span>Льготное медицинское обслуживание, скидки, корпоративные
+                            программы и спецпредложения от партнёров холдинга.</span>
+
+                    </div>
+                    <div class="grid_content">
+                        <img src="../img/balloons.svg" alt="">
+                        <p> Корпоративные льготы</p><span>Льготное медицинское обслуживание, скидки, корпоративные
+                            программы и спецпредложения от партнёров холдинга.</span>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer_content">
+                <div class="footer_logo">
+                    <img src="../img/logo copy.svg" alt="">
+
+                    <p>Отличный сервис, обеспечивающий безопасность пациентов</p>
+                    <div class="text_icon">
+                        <a href="https://www.instagram.com/radamir06/" target="new"> <img src="../img/insta.svg"
+                                alt=""></a>
+                        <a href="https://t.me/amika06" target="new"><img src="../img/telegram.svg" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="footer_text">
+                    <div class="footer_text_inner">
+                        <li><a href="../Home_rightVersion/index.html">Главная</a></li>
+                        <li><a href="../About Us/aboutUs.html">О нас</a></li>
+                        <li><a href="../Doctors/index.html">Доктора</a></li>
+                        <li><a href="../Comments/index.html">Отзывы</a></li>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/app.js"></script>
+
+
+
+</body>
+
+</html>

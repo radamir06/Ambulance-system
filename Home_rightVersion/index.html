@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <title>Клиника</title>
+</head>
+
+<body>
+  <header id="navbar" class="header">
+    <div class="container">
+        <div class="header_content">
+            <div class="header_logo">
+                <a href="../Home_rightVersion/index.html"><img src="../img/logo.svg" alt=""></a>
+            </div>
+            <div class="support_call">
+                <img src="../img/Без названия.svg" alt="">
+                <div class="call_content">
+                    <p>Круглосуточная запись по телефону:</p>
+                    <a href="tel:+998946106788">+998946106788</a>
+                </div>
+            </div>
+            <div class="header_toolbar">
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li><a href="../Home_rightVersion/index.html">Главная</a></li>
+                        <li><a href="../About Us/aboutUs.html">О <span>нас</span> </a></li>
+                        <li><a href="../Doctors/index.html">Доктора</a></li>
+                        <li><a href="../Comments/index.html">Отзывы</a></li>
+                        <button class="login_btn2" onclick="document.getElementById('id01').style.display = 'block'">Вход</button>
+                    </ul>
+                </nav>
+            </div>
+            <button class="login_btn" onclick="document.getElementById('id01').style.display='block'">Вход</button>
+
+            <div id="header_burger" class="header_burger">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+
+      </div>
+
+      <div class="login_container">
+        <label for="uname"><b>Логин</b></label>
+        <input type="text" placeholder="Ваш логин" name="uname" id="uname" required>
+
+        <label for="psw"><b>Пароль</b></label>
+        <input type="password" placeholder="Введите пароль" name="psw" id="psw" required>
+
+        <button type="submit" onclick="drLogin()"> Войти </button>
+
+      </div>
+
+
+    </form>
+  </div>
+  <div class="main_content">
+    <div class="container">
+      <div class="container_title">
+        <div class="title-right">
+          <div class="title-text">
+            <h1>
+              "Alpha Hospital" 
+              одна из крупнейших
+              сетей многопрофильных медицинских центров для взрослых и детей.
+            </h1>
+            <p>
+              Мы ведём свою историю с 2002 года.
+              Сейчас у нас работают 27 многопрофильных клиник
+              в Ташкенте, Самарканде, Бухаре,
+              которые открыты для вас ежедневно,
+              включая выходные и праздничные дни.
+            </p>
+            <a href="#appointment-doctor-form"><button   class="emergency-btn" > Записаться на прием</button></a>
+
+            <button onclick="EmergencyCall()" class="emergency-btn">Вызов скорой помощи</button>
+          </div>
+        </div>
+
+        <div class="header-img">
+          <img src="../img/image1.png" alt="2" />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="cards_outer">
+        <p>Принципы работы "Alpha Hospital"</p>
+        <div class="cards">
+
+          <div class="card">
+            <img src="../img/first aid.png" alt="3">
+            <h3>Международная аккредитация</h3>
+            <p>Лучшая безопасность и защита с аккредитацией JCI</p>
+            </p>
+          </div>
+          <div class="card">
+            <img src="../img/ambulance.png" alt="3">
+            <h3>Лучший сервис</h3>
+            <p>Обеспечиваем отличный сервис и лечение для пациентов</p>
+            </p>
+          </div>
+          <div class="card">
+            <img src="../img/recomendation.png" alt="3">
+            <h3>Доступность</h3>
+            <p>Предлагаем широкий спектр доступных услуг для лечения и профилактики</p>
+            </p>
+          </div>
+          <div class="card">
+            <img src="../img/pills.png" alt="3">
+            <h3>Ответственноть</h3>
+            <p>Серьезное отношение к пациентам и назначению продуктов лечения</p>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="full_service">
+      <div class="container">
+        <div class="container_inner">
+          <div class="service_content">
+            <img class="service_content_img" src="../img/unsplash_43LwvC-eQPM.png" alt="">
+            <div class="content_text">
+              <b>
+                Предоставление лучших услуг для вас
+              </b>
+              <p>Мы предлагаем полный спектр специализированных услуг, в том числе одну из крупнейших больниц в
+                Узбекистане с из самых загруженных отделений неотложной помощи Ташкента.</p>
+              <div class="play_btn">
+                <a href="https://www.youtube.com/watch?v=hHcTZ8tHKW8" target="new"><img src="../img/play-circle 2.png"
+                    alt=""></a>
+                <p>Посмотреть видео</p>
+              </div>
+            </div>
+          </div>
+          <div class="service_content">
+            <div class="content_text">
+              <b>
+                Лучшие доктора на любой случай
+              </b>
+              <p>В наших медицинских центрах работают врачи как самых востребованных медицинских специальностей:
+                терапевты, кардиологи, урологи, гинекологи, офтальмологи, оториноларингологи, хирурги и другие, так и
+                редких: генетики, репродуктологи, эмбриологи, гепатологи и другие.</p>
+              <div class="play_btn">
+                <a href="https://www.youtube.com/watch?v=k37X6NAu29Y" target="new"><img src="../img/play-circle 2.png"
+                    alt=""></a>
+                <p>Посмотреть видео</p>
+              </div>
+            </div>
+            <img class="service_content_img" src="../img/unsplash_Yxt67gmhZaw.png" alt="">
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="contact_us">
+            <p>Контакты</p>
+            <div class="contact_us_content">
+              <img src="../img/ambulance 2.png" alt="">
+              <div class="contact_us_text">
+                <p>Скорая помощь</p>
+                <span>(94)610-67-88</span>
+              </div>
+            </div>
+            <div class="contact_us_content">
+              <img src="../img/phone-alt 1.png" alt="">
+              <div class="content_img"></div>
+              <div class="contact_us_text">
+                <p>
+                  Обслуживание клиентов</p>
+                <span>(94)610-67-88</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="appointment" id="appointment-doctor-form">
+          <div class="appointment_content">
+            <p>Запись на прием у врача</p>
+            <form class="appointmentForm" id="appointmentForm">
+
+              <div class="form_inner">
+                <label for="name">Имя: </label>
+                <input class="text-field__input" type="text" id="fname" name="fname" placeholder="Ваше Имя" required>
+              </div>
+              <div class="form_inner">
+                <label for="tel">Номер телефона: </label>
+                <input class="text-field__input" type="tel" id="phone" name="phone"
+                   placeholder="(9X) XXX-XX-XX" required>
+              </div>
+              <div class="form_inner">
+                <label for="start">Назначить дату:</label>
+
+                <input class="text-field__input" type="date" id="date" name="trip-start" placeholder="DD-MM-YYYY" min="2023-01-18" max="2023-12-29">
+              </div>
+              <select name="yello" id="doctor" required>
+                <option class="doctor_choose">Выберете доктора</option>
+
+                <option>Бёден Дебо Ансарович (Уролог-андролог)</option>
+                <option>Чакирян Микаел Ашотович (Уролог-андролог)</option>
+                <option>Абазов Вагиф Фирдовси оглы (Уролог-андролог)</option>
+                <option>Денисенков Антон Иванович (Психиатр)</option>
+                <option>Петух Юрий Игоревич (Психиатр)</option>
+                <option>Абасова Джамиля Эмирхановна (Офтальмолог)</option>
+                <option>Абдулаева Сати Абдулаевна (Акушер-гинеколог)</option>
+                <option>Абдуллаева Наида Кадиевна (Оториноларинголог)</option>
+                <option>Абдуллоев Шозодаабдол (Дерматовенеролог)</option>
+              </select>
+              <select name="time" id="time" required>
+                <option class="doctor_choose">Выберете время</option>
+                <option>8:00</option>
+                <option>10:00</option>
+                <option>12:00</option>
+                <option>14:00</option>
+                <option>16:00</option>
+                <option>18:00</option>
+              </select>
+
+              <div class="form-example">
+                <input class="text-field__submit" type="submit" onclick="myFunction()" value="Записаться">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+  <div id="emergencyGo" class="emergencyAnswer">
+    <div class="emergencyAnswer_title">
+      <img src="/img/EmerCar.png" alt="Car">
+      <img src="/img/EmerCar.png" alt="Car">
+      <h4>Скорая уже в пути</h4>
+      <img src="/img/EmerCar.png" alt="Car">
+      <img src="/img/EmerCar.png" alt="Car">
+     
+    </div>
+    <div onclick="answerClose()"
+      class="answerclose"> &#10006</div>
+  </div>
+<div class="container">
+<div class="adress" id="emergencyAdress">
+  <h3>Введите адрес</h3>
+  <div class="Emergency-form">
+  <input id="input" type="text" size="85" >
+  <button onclick="emergencyGo()" class="Emergency-btn"> отправить </button>
+</div>
+</div>
+</div>
+
+  <!-- Вызов скорой -->
+
+
+
+  <footer>
+    <div class="container">
+      <div class="footer_content">
+        <div class="footer_logo">
+          <img src="../img/logo copy.svg" alt="1">
+
+          <p>Отличный сервис, обеспечивающий безопасность пациентов</p>
+          <div class="text_icon">
+            <a href="https://www.instagram.com/radamir06/" target="new"> <img src="../img/insta.svg" alt=""></a>
+            <a href="https://t.me/amika06" target="new"><img src="../img/telegram.svg" alt=""></a>
+          </div>
+
+        </div>
+        <div class="footer_text">
+          <div class="footer_text_inner">
+            <li><a href="../Home_rightVersion/index.html">Главная</a></li>
+            <li><a href="../About Us/aboutUs.html">О нас</a></li>
+            <li><a href="../Doctors/index.html">Доктора</a></li>
+            <li><a href="../Comments/index.html">Отзывы</a></li>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  </div>
+  <script src="../js/app.js"></script>
+</body>
+
+</html>

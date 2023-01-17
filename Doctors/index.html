@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Doctors/style.css">
+  <title>Доктора</title>
+</head>
+
+<body>
+  <header id="navbar" class="header">
+    <div class="container">
+        <div class="header_content">
+            <div class="header_logo">
+                <a href="../Home_rightVersion/index.html"><img src="../img/logo.svg" alt=""></a>
+            </div>
+            <div class="support_call">
+                <img src="../img/Без названия.svg" alt="">
+                <div class="call_content">
+                    <p>Круглосуточная запись по телефону:</p>
+                    <a href="tel:+998946106788">+998946106788</a>
+                </div>
+            </div>
+            <div class="header_toolbar">
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li><a href="../Home_rightVersion/index.html">Главная</a></li>
+                        <li><a href="../About Us/aboutUs.html">О <span>нас</span> </a></li>
+                        <li><a href="../Doctors/index.html">Доктора</a></li>
+                        <li><a href="../Comments/index.html">Отзывы</a></li>
+                        <button class="login_btn2" onclick="document.getElementById('id01').style.display = 'block'">Вход</button>
+                    </ul>
+                </nav>
+            </div>
+            <button class="login_btn" onclick="document.getElementById('id01').style.display='block'">Вход</button>
+
+            <div id="header_burger" class="header_burger">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+</header>
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+
+      </div>
+
+      <div class="login_container">
+        <label for="uname"><b>Логин</b></label>
+        <input type="text" placeholder="Ваш логин" name="uname" id="uname" required>
+
+        <label for="psw"><b>Пароль</b></label>
+        <input type="password" placeholder="Введите пароль" name="psw" id="psw" required>
+
+        <button type="submit" onclick="drLogin()"> Войти </button>
+
+      </div>
+
+
+    </form>
+  </div>
+
+  <div class="main_content">
+    
+    <div class="title">
+      <div class="container">
+        <p> Наши доктора
+        </p>
+      </div>
+    </div>
+    <div class="doctor-title">
+    <div class="container">
+      <p>В штате нашей Клиники работают более 100 высококвалифицированных специалистов,
+        в том числе более 10 опытных докторов, регулярно участвующих в различных
+        симпозиумах, конференциях и мастер-классах.
+        Наши врачи постоянно развиваются и получают дополнительное образование. </p>
+
+      <p>Большое количество докторов позволяет нам комплексно подходить
+        к вопросу оказания услуг и находить оптимальные
+        варианты лечения даже в самых сложных ситуациях, что не могут
+        предложить небольшие клиники с ограниченным штатом докторов.</p>
+
+      <p>Так же наши доктора проводят дополнительное обучение
+        в других клиниках по всему миру.</p>
+    </div>
+  </div>
+    <div class="container">
+      <div class="grid-container">
+        <div class="grid-item">
+          <img class="img1" src="../img/doctor_images/Ансорович.jpg" alt="1" />
+          <h1 class="t1">
+            Бёден Дебо <br />
+            Ансарович
+          </h1>
+          <p>Врач уролог-андролог первой категории<br>
+            <b>Стаж: <span>22 года</span> </b>
+          </p>
+          <a href="#appointment-doctor-form"><button id="callDoctor"  >Записаться онлайн</button></a>
+        </div>
+        <div class="grid-item">
+          <img class="img1" src="../img/doctor_images/ivanovich.jpg" alt="2" />
+          <h1 class="t1">Денисенков Антон Иванович</h1>
+          <p>Врач-психиатр</p>
+          <b>Стаж: <span>10 лет</span> </b>
+          <a href="#appointment-doctor-form"><button id="callDoctor"  >Записаться онлайн</button></a>
+        </div>
+        <div class="grid-item">
+          <img class="img1" src="../img/doctor_images/igorevich.jpg" alt="3" />
+          <h1 class="t1">
+            Петух Юрий <br />
+            Игоревич
+          </h1>
+          <p>Врач-психиатр</p>
+            <b>Стаж: <span>8 лет</span> </b>
+          
+          
+          <a href="#appointment-doctor-form"><button id="callDoctor"  >Записаться онлайн</button></a>
+        </div>
+        <div class="grid-item">
+          <img class="img1" src="../img/doctor_images/awotovich.jpg" alt="3" />
+          <h1 class="t1">
+            Чакирян Микаел <br />
+            Ашотович
+          </h1>
+          <p>Врач уролог-андролог</p>
+          <b>Стаж: <span>11 лет</span> </b>
+          <a href="#appointment-doctor-form"><button id="callDoctor"  >Записаться онлайн</button></a>
+        </div>
+        <div class="grid-item">
+          <img class="img1" src="../img/doctor_images/firdovsi.png" alt="4" />
+          <h1 class="t1">
+            Абазов Вагиф <br />
+            Фирдовси оглы
+          </h1>
+          <p>Врач уролог-андролог</p>
+          <b>Стаж: <span>25 лет</span> </b>
+          <a href="#appointment-doctor-form"><button id="callDoctor"  >Записаться онлайн</button></a>
+        </div>
+        <div class="grid-item">
+          <img class="img1" src="../img/doctor_images/emirhonova.jpg" alt="5" />
+          <h1 class="t1" id="doctor">
+            Абасова Джамиля <br />
+            Эмирхановна
+          </h1>
+          <p>Врач-офтальмолог</p>
+          <b>Стаж: <span>15 лет</span> </b>
+          <a href="#appointment-doctor-form"><button id="callDoctor"  >Записаться онлайн</button></a>
+        </div>
+        <div class="grid-item">
+          <img class="img1" src="../img/doctor_images/abdulayve.jpg" alt="6" />
+          <h1 class="t1" >
+            Абдулаева Сати
+            Абдулаевна
+          </h1>
+          <p>Врач акушер-гинеколог высшей категории</p>
+          <b>Стаж: <span>32 года</span> </b>
+          <a href="#appointment-doctor-form"><button id="callDoctor"  >Записаться онлайн</button></a>
+        </div>
+        <div class="grid-item">
+          <img class="img1" src="../img/doctor_images/kimdur.jpg" alt="7" />
+          <h1 class="t1" >
+            Абдуллаева Наида <br />
+            Кадиевна
+          </h1>
+          <p>Врач-оториноларинголог</p>
+          <b>Стаж: <span>20 лет</span> </b>
+          <a href="#appointment-doctor-form"><button id="callDoctor"  >Записаться онлайн</button></a>
+        </div>
+        <div class="grid-item">
+          <img class="img1" src="../img/doctor_images/kimdur2.jpg" alt="8" />
+          <h1 class="t1">Абдуллоев Шозодаабдол <br /></h1>
+          <p>Врач-дерматовенеролог</p>
+          <b>Стаж: <span>40 лет</span> </b>
+          <a href="#appointment-doctor-form"><button id="callDoctor"  >Записаться онлайн</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="container">
+  <div class="appointment" id="appointment-doctor-form">
+    <div class="appointment_content">
+      <p>Запись на прием у врача</p>
+      <form class="appointmentForm" id="appointmentForm">
+
+        <div class="form_inner">
+          <label for="name">Имя: </label>
+          <input class="text-field__input" type="text" id="fname" name="fname" placeholder="Ваше Имя" required>
+        </div>
+        <div class="form_inner">
+          <label for="tel">Номер телефона: </label>
+          <input class="text-field__input" type="tel" id="phone" name="phone"
+            pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="(9X)XXX-XX-XX" required>
+        </div>
+        <div class="form_inner">
+          <label for="start">Назначить дату:</label>
+
+          <input class="text-field__input" type="date" id="date" name="trip-start" placeholder="DD-MM-YYYY" min="2023-01-18" max="2023-12-29">
+        </div>
+        <select name="yello" id="doctor">
+          <option class="doctor_choose">Выберете доктора</option>
+
+          <option>Бёден Дебо Ансарович (Уролог-андролог)</option>
+          <option>Чакирян Микаел Ашотович (Уролог-андролог)</option>
+          <option>Абазов Вагиф Фирдовси оглы (Уролог-андролог)</option>
+          <option>Денисенков Антон Иванович (Психиатр)</option>
+          <option>Петух Юрий Игоревич (Психиатр)</option>
+          <option>Абасова Джамиля Эмирхановна (Офтальмолог)</option>
+          <option>Абдулаева Сати Абдулаевна (Акушер-гинеколог)</option>
+          <option>Абдуллаева Наида Кадиевна (Оториноларинголог)</option>
+          <option>Абдуллоев Шозодаабдол (Дерматовенеролог)</option>
+        </select>
+
+        <div class="form-example">
+          <input class="text-field__submit" type="submit" onclick="myFunction()" value="Записаться">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+    <div class="container">
+      <div class="footer_content">
+        <div class="footer_logo">
+          <img src="../img/logo copy.svg" alt="">
+
+          <p>Отличный сервис, обеспечивающий безопасность пациентов</p>
+          <div class="text_icon">
+            <a href="https://www.instagram.com/radamir06/" target="new"> <img src="../img/insta.svg" alt=""></a>
+            <a href="https://t.me/amika06" target="new"><img src="../img/telegram.svg" alt=""></a>
+          </div>
+
+        </div>
+        <div class="footer_text">
+          <div class="footer_text_inner">
+            <li><a href="../Home_rightVersion/index.html">Главная</a></li>
+            <li><a href="../About Us/aboutUs.html">О нас</a></li>
+            <li><a href="../Doctors/index.html">Доктора</a></li>
+            <li><a href="../Comments/index.html">Отзывы</a></li>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  </div>
+  <script src="../js/app.js"></script>
+</body>
+
+</html>

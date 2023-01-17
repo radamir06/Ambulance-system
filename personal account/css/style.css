@@ -1,0 +1,658 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+
+}
+
+
+#byoden,
+#byoden1,
+#byoden2,
+#denis,
+#denis1,
+#denis2,
+#petuh,
+#petuh1,
+#petuh2,
+#mikael,
+#mikael1,
+#mikael2,
+#vagif,
+#vagif1,
+#vagif2,
+#jamilya,
+#jamilya1,
+#jamilya2,
+#sati,
+#sati1,
+#sati2,
+#naida,
+#naida1,
+#naida2,
+#shoz,
+#shoz1,
+#shoz2 {
+    display: none;
+}
+
+/* _____Header_____ */
+
+header {
+    background-color: #00806B;
+    box-shadow: 0 8px 10px rgb(0 0 0 / 0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 10px;
+
+
+
+}
+
+.header_content {
+    padding: 0 60px 0 50px;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.header_logo img {
+    height: 100px;
+}
+
+.header_toolbar {
+    position: relative;
+    width: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 15px;
+    text-align: end;
+}
+
+.toolbar_content {
+    margin-right: 30px;
+}
+
+.toolbar_content p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* MAIN_CONTENT */
+.main_content {
+    display: flex;
+    flex-direction: row;
+     
+}
+
+.personal_info_left {
+    margin-top: 104px;
+    background-color: #DDDEE2;
+    width: 300px;
+
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.list {
+
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.list_content {
+    padding: 15px 50px 15px 15px;
+    border-radius: 50px 0 0 50px;
+    font-size: 20px;
+    transition: .4s;
+}
+.list_content a{
+    color: black;
+    text-decoration: none;
+}
+
+.list_content{
+    cursor: pointer;
+    background-color: #EFF8F3;
+}
+
+.list_content:nth-child(2) {
+    background-color: #EBF2FC;
+}
+
+.list_content:nth-child(3){
+    background-color: #FFEFEF;
+}
+.list_content:nth-child(4){
+    width: 200px;
+    border-radius: 50px;
+    padding: 15px;
+    background-color: #FFF8E8;
+}
+
+/* __MENU */
+.menu-box {
+
+    display: flex;
+    gap: 20px;
+}
+
+.avatar {
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background-image: url(../../img/doctor_images/Ансорович.jpg);
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+
+    display: none;
+}
+
+#denisAva1 {
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background-image: url(../../img/doctor_images/ivanovich.jpg);
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+
+    display: none;
+}
+
+#petuhAva1 {
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background-image: url(../../img/doctor_images/igorevich.jpg);
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+
+    display: none;
+}
+
+#mikaelAva1 {
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background-image: url(../../img/doctor_images/awotovich.jpg);
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+
+    display: none;
+}
+
+#vagifAva1 {
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background-image: url(../../img/doctor_images/firdovsi.png);
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+
+    display: none;
+}
+
+#jamilyaAva1 {
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background-image: url(../../img/doctor_images/emirhonova.jpg);
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+
+    display: none;
+}
+
+#satiAva1 {
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background-image: url(../../img/doctor_images/abdulayve.jpg);
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+
+    display: none;
+}
+
+#naidaAva1 {
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background-image: url(../../img/doctor_images/kimdur.jpg);
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+
+    display: none;
+}
+
+#shozAva1 {
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background-image: url(../../img/doctor_images/kimdur2.jpg);
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+
+    display: none;
+}
+
+.box_avatar {
+    display: flex;
+    gap: 10px;
+
+}
+
+.avatar_text {
+    margin: 0;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.avatar_text span {
+    font-size: 18px;
+    color: #686B7C;
+
+}
+
+.personal_info {
+    margin-top: 104px;
+    background-color: white;
+
+    width: 810px;
+    height: 1000px;
+
+
+}
+
+.personal_info_middle {
+    margin-top: 104px;
+
+
+
+
+
+
+}
+
+#aboutme {
+    height: 1000px;
+    background-color: #EFF8F3;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+
+    /* display: none; */
+}
+
+.menu-box_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.box_info {
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.box_info p {
+    color: gray;
+
+}
+
+.menu-box {
+
+    display: flex;
+    gap: 20px;
+}
+
+.box_avatar .avatar1 {
+    background-image: url(../../img/doctor_images/Ансорович.jpg);
+    width: 140px;
+    height: 140px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: none;
+
+}
+
+#denisAva {
+    background-image: url(../../img/doctor_images/ivanovich.jpg);
+    width: 140px;
+    height: 140px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: none;
+
+}
+
+#petuhAva {
+    background-image: url(../../img/doctor_images/igorevich.jpg);
+    width: 140px;
+    height: 140px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    border: 1px solid gray;
+    /* display: none; */
+
+}
+
+#mikaelAva {
+    background-image: url(../../img/doctor_images/awotovich.jpg);
+    width: 140px;
+    height: 140px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: none;
+}
+
+#vagifAva {
+
+    background-image: url(../../img/doctor_images/firdovsi.png);
+    width: 140px;
+    height: 140px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: none;
+}
+
+#jamilyaAva {
+    background-image: url(../../img/doctor_images/emirhonova.jpg);
+    width: 140px;
+    height: 140px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: none;
+}
+
+#satiAva {
+
+    background-image: url(../../img/doctor_images/abdulayve.jpg);
+    width: 140px;
+    height: 140px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: none;
+}
+
+#naidaAva {
+
+    background-image: url(../../img/doctor_images/kimdur.jpg);
+    width: 140px;
+    height: 140px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: none;
+}
+
+#shozAva {
+    background-image: url(../../img/doctor_images/kimdur2.jpg);
+    width: 140px;
+    height: 140px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: none;
+}
+
+
+.box_avatar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+.avatar_text {
+    margin: 0;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.avatar_text span {
+    font-size: 18px;
+    color: #686B7C;
+
+}
+
+.personal_info {
+    margin-top: 104px;
+    background-color: white;
+
+    width: 810px;
+    height: 1000px;
+
+
+}
+
+.personal_info_middle {
+    margin-top: 104px;
+}
+
+.menu-box {
+    height: 1000px;
+    background-color: #EFF8F3;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.menu-box_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.box_info {
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.box_info p {
+    color: gray;
+
+}
+
+
+#aboutcomp {
+    height: 1000px;
+    background-color: #EBF2FC;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+}
+
+.about-team {
+    display: flex;
+    gap: 50px;
+
+}
+
+
+.about-team-text {
+    padding: 30px;
+    background-color: #F9F9F7;
+    border-radius: 13px;
+    border: 1px solid gray;
+    font-size: 19px;
+
+}
+
+.about-team-text p {
+    margin-bottom: 15px;
+}
+
+.team-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.team-stat-cell {
+    padding: 15px;
+    background-color: #ECF5F1;
+
+    border-radius: 13px;
+
+    border: 1px solid gray;
+}
+
+.team-stat-cell div {
+    color: #3C9670;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.team-stat-cell b {
+    color: #3C9670;
+
+
+}
+
+#patient {
+    height: 1000px;
+    background-color: #FFEFEF;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+}
+
+.patient_list {
+
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+.patient_list p {
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+.patient_content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 20px;
+
+}
+
+.patient_content p {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+
+}
+.patient_content span{
+    margin-right: 8px;
+}
+.patient_bin{
+    display: flex;
+    justify-content: flex-end;
+}
+ .patient_bin span img{
+    width: 30px;
+    height: 30px;
+   
+}
+.patient_bin span img:hover{
+    cursor: pointer;
+   
+}
+.personal_info img{
+    width: 810px;
+    margin-top: 23px;
+    
+}
+
